@@ -26,6 +26,7 @@ class Scraper
       { twitter:
       :linkedin
        :github
+       :profile_quote
   end
 
 end
