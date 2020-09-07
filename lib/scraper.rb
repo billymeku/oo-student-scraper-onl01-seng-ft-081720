@@ -23,10 +23,10 @@ end
     resp = Nokogiri::HTML(open(profile_url))
     social_link = resp.css('div.social-icon-container a')
     social_link.collect do |student|
-      { twitter: student.css('div.social-icon-container a')
-      linkedin: student.css('div.social-icon-container a')
-       github: student.css('div.social-icon-container a')
-       profile_quote: student.css('div.social-icon-container a')
+      { twitter: student.css('div.social-icon-container a'),
+        linkedin: student.css('div.social-icon-container a'),
+       github: student.css('div.social-icon-container a'),
+       profile_quote: student.css('div.social-icon-container a'),
        bio: student.css('div.social-icon-container a')
       }
    end 
