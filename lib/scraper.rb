@@ -24,6 +24,7 @@ class Scraper
     social_link = resp.css('div.social-icon-container a')
     social_link.collect do |student|
       { twitter:
+      :linkedin
     
   end
 
