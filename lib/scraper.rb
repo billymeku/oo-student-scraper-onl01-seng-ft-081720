@@ -1,5 +1,5 @@
-require_relative 'student'
 require 'open-uri'
+require 'nokogiri'
 require 'pry'
 
 
