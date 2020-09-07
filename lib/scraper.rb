@@ -35,6 +35,9 @@ end
     quote = html.css('div.vitals-text-container div.profile-quote').text
     {bio: bio, profile_quote: quote}.merge(social_media)
   end
+  
+  
+  
 
 end
 
