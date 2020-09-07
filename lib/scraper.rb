@@ -25,7 +25,7 @@ class Scraper
     social_link.collect do |student|
       { twitter:
       :linkedin
-    
+       :github
   end
 
 end
