@@ -9,7 +9,9 @@ class Scraper
     
     resp = Nokogiri::HTML(open(index_url))
     student_arr = resp.css('div.student-card')
-    student_arr.collect |student|
+    student_arr.collect do |student|
+      
+    end
     
   end
 
