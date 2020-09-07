@@ -16,8 +16,8 @@ class Scraper
       profile_url: student.css('a')[0]['href']
       }
        
-       end  
-  end
+    end  
+end
 
   def self.scrape_profile_page(profile_url)
     resp = Nokogiri::HTML(open(profile_url))
@@ -29,7 +29,8 @@ class Scraper
        profile_quote: student.css('div.social-icon-container a')
        bio: student.css('div.social-icon-container a')
       }
-  end
+   end 
+ end
 
 end
 
