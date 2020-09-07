@@ -7,7 +7,7 @@ class Scraper
 
   def self.scrape_index_page(index_url)
     
-    resp = Nokogiri::HTML(open('https://learn-co-curriculum.github.io/student-scraper-test-page/index.html'))
+    resp = Nokogiri::HTML(open(index_url))
     
     # binding.pry
     # stu_hash = JSON.parse(resp.body, symbolize_names:true)
