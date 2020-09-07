@@ -37,7 +37,11 @@ end
   end
   
   
-  
+  def self.url_type(url)
+    beginning = url.split(".com")[0]
+    domain = beginning.split("//").last
+    domain.split(".").last
+  end
 
 end
 
