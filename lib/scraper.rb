@@ -9,7 +9,7 @@ class Scraper
     
     resp = Nokogiri::HTML(open(index_url))
     student_arr = resp.css('div.student-card')
-    
+    student_arr.collect ||
   end
 
   def self.scrape_profile_page(profile_url)
