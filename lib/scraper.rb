@@ -9,7 +9,6 @@ class Scraper
     
     resp = Nokogiri::HTML(open(index_url))
     
-    # binding.pry
     # stu_hash = JSON.parse(resp.body, symbolize_names:true)
     # student_arr = student_hash[:student]
     #     student_arr.collect do | student_hash|
